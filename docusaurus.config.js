@@ -1,18 +1,19 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'ScottyLabs Tech',
-  tagline: 'Applications and projects built by ScottyLabs for the CMU community',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  title: "ScottyLabs Tech",
+  tagline:
+    "Applications and projects built by ScottyLabs for the CMU community",
+  url: "https://your-docusaurus-test-site.com",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -23,23 +24,23 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
         },
         blog: {
           showReadingTime: true,
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -47,12 +48,12 @@ const config = {
 
   plugins: [
     [
-      'content-docs',
+      "content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'dining',
-        path: 'dining',
-        routeBasePath: 'dining',
+        id: "dining",
+        path: "dining",
+        routeBasePath: "dining",
         remarkPlugins: [],
         editCurrentVersion: true,
         showLastUpdateAuthor: true,
@@ -66,78 +67,78 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'ScottyLabs Tech',
+        title: "ScottyLabs Tech",
         logo: {
-          alt: 'ScottyLabs Tech',
-          src: 'img/scotty.svg',
+          alt: "ScottyLabs Tech",
+          src: "img/scotty.svg",
         },
         items: [
           {
-            type: 'doc',
-            label: 'About the Committee',
-            docId: 'intro',
+            type: "doc",
+            label: "About",
+            docId: "intro",
           },
           {
-            type: 'dropdown',
-            label: 'API Docs',
-            position: 'left',
+            type: "dropdown",
+            label: "API Docs",
+            position: "left",
             items: [
               {
-                type: 'doc',
-                label: 'Course API',
-                docId: 'intro',
+                type: "doc",
+                label: "Course API",
+                docId: "intro",
               },
               {
-                type: 'doc',
-                label: 'Dining API',
-                docId: 'intro',
-                docsPluginId: 'dining'
+                type: "doc",
+                label: "Dining API",
+                docId: "intro",
+                docsPluginId: "dining",
               },
-            ]
+            ],
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/facebook/docusaurus",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Pages',
+            title: "Pages",
             items: [
               {
-                label: 'About the Committee',
-                to: '/docs/intro',
+                label: "About",
+                to: "/docs/intro",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Follow ScottyLabs on Instagram',
-                href: 'https://href.scottylabs.org/instagram',
+                label: "Follow ScottyLabs on Instagram",
+                href: "https://href.scottylabs.org/instagram",
               },
               {
-                label: 'Subscribe to our Mailing List',
-                href: 'https://href.scottylabs.org/mail',
+                label: "Subscribe to our Mailing List",
+                href: "https://href.scottylabs.org/mail",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: "Blog",
+                to: "/blog",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/scottylabs',
+                label: "GitHub",
+                href: "https://github.com/scottylabs",
               },
             ],
           },
