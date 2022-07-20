@@ -61,6 +61,34 @@ const config = {
         // sidebarPath: require.resolve('./sidebars.js'),
       }),
     ],
+    [
+      "content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: "course",
+        path: "course",
+        routeBasePath: "course",
+        remarkPlugins: [],
+        editCurrentVersion: true,
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        // sidebarPath: require.resolve('./sidebars.js'),
+      }),
+    ],
+    [
+      "content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: "hub-internal",
+        path: "dochub/internal",
+        routeBasePath: "dochub/internal",
+        remarkPlugins: [],
+        editCurrentVersion: true,
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        // sidebarPath: require.resolve('./sidebars.js'),
+      }),
+    ],
   ],
 
   themeConfig:
@@ -87,6 +115,7 @@ const config = {
                 type: "doc",
                 label: "Course API",
                 docId: "intro",
+                docsPluginId: "course",
               },
               {
                 type: "doc",
